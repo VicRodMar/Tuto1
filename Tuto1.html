@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Victor Rodriguez Marti">
-    <title>Ma page test</title>
+    <title>Petit jeu</title>
     <link rel="stylesheet" href="Tuto1.css">
     
   </head>
+
   <body>
 
     <h1>Number guessing game</h1>
@@ -15,17 +16,36 @@
     <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
     
     <div class="form">
+        <label for="Name">Enter your name: </label><input type="text" id="NameField" class="NameField">
+        <input type="submit" value="Submit name" class="NameSubmit">
+    </div>
+
+    <div class="form">
         <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
         <input type="submit" value="Submit guess" class="guessSubmit">
-      </div>
-  
-      <div class="resultParas">
+    </div>
+
+    <div class="resultParas">   
+        <b><p class="LastGuess"></p></b>
         <p class="guesses"></p>
         <p class="lastResult"></p>
         <p class="lowOrHi"></p>
-      </div>
+    </div>
 
-      <script src="Tuto2.js"></script>
+    <div>
+        <table style="width:100%" id="myTable">
+            <tr>
+              <th>Joueur</th>
+              <th>Score (/10)</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <p class="HighestScoreField"></p>
+    </div>
+
+    <script src="Tuto2.js"></script>
   </body>
   
 </html>
