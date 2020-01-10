@@ -6,36 +6,26 @@
     <meta name="author" content="Victor Rodriguez Marti">
     <title>Ma page test</title>
     <link rel="stylesheet" href="Tuto1.css">
-    <script src="Tuto1.js"></script>
+    
   </head>
   <body>
-    <!-- noms scientifiques -->
-<p>
-    Le colibri à gorge rouge (<i>Archilochus colubris</i>)
-    est le colibri le plus courant dans l'ouest de l'Amérique du Nord.
-  </p>
+
+    <h1>Number guessing game</h1>
+
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+    
+    <div class="form">
+        <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+      </div>
   
-  <!-- mots dans une langue étrangère -->
-  <p>
-    Le menu était un océan de mots exotiques comme <i lang="uk-latn">vatrushka</i>,
-    <i lang="id">nasi goreng</i> et <i lang="en">porridge</i>.
-  </p>
-  
-  <!-- une faute d'orthographe connue -->
-  <p>
-    Un jour, j'apprendrai comment mieux <u style="text-decoration-line: underline; text-decoration-style: wavy;">épeler</u>.
-  </p>
-  
-  <!-- Mettre en évidence les mots‑clés dans un ensemble d'instructions -->
-  <ol>
-    <li>
-      <b>Trancher</b> deux morceaux de pain dans la miche.
-    </li>
-    <li>
-      <b>Mettre</b> une rondelle de tomate et une feuille de laitue
-      entre les deux tranches de pain.
-    </li>
-  </ol>
+      <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
+
+      <script src="Tuto2.js"></script>
   </body>
   
 </html>
