@@ -12,3 +12,7 @@ ol {
 li {
   margin-left: 20px;
 }
+
+table, th, td {
+    border: 1px solid black;
+  }
